@@ -48,7 +48,7 @@ export default function Home() {
         return;
       }
       
-      api.defaults.headers.authorization = `Bearer ${authData.token}`
+      // api.defaults.headers.authorization = `Bearer ${authData.token}`
       
       Cookies.set("EasyApp!Token", authData.token);
       Cookies.set("EasyApp!UserEmail", authData.user.email);
