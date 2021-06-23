@@ -30,15 +30,11 @@ export default function ConsultaAPI() {
 
   async function handleSubmit(data) {
     try {
-      const response = await api.post("https://api.smtplw.com.br/v1/messages", {
+      const response = await api.post("/locaweb", {
         subject: data.assunto,
         body: "Olá, tudo bem?",
         from: data.remetente,
         to: data.destinatario,
-      }, {
-        headers: {
-          "x-auth-token": "7sd6g8f7sdg78fsdg7fsd"
-        }
       })
 
       setResponseAPI(response);
@@ -76,7 +72,7 @@ export default function ConsultaAPI() {
           </Form>
         </section>
         <section className={styles.response}>
-          <h4>Request</h4>
+          <h4>Response</h4>
           <hr />
           <pre >
             {JSON.stringify(responseAPI, undefined, 2)}
