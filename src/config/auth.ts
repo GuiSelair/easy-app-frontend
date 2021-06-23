@@ -1,6 +1,6 @@
 export const auth = {
   path: "/",
-  // domain: "https://hidden-headland-41774.herokuapp.com",
-  domain: "localhost",
+  domain: "https://easy-app-frontend.vercel.app/",
+  // domain: "localhost",
   secure: true, 
 };
