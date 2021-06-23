@@ -30,7 +30,7 @@ export default function ConsultaAPI() {
 
   async function handleSubmit(data) {
     try {
-      const response = await api.post("/locaweb", {
+      const response = await api.post("/localweb", {
         subject: data.assunto,
         body: "Olá, tudo bem?",
         from: data.remetente,
