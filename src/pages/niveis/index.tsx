@@ -228,6 +228,7 @@ export default function Niveis({ allCourses, allLevelsAvailable, authToken }: IN
       idadeInicial: selectedLevelCourse.idade_inicial,
       fontColor: selectedLevelCourse.font_color,
       backgroundColor: selectedLevelCourse.label_color,
+      ativo: selectedLevelCourse.status,
     }
     formLevelRef?.current?.setFieldValue('ativo', {value: selectedLevelCourse.status, label: selectedLevelCourse.status === "S" ? "Sim" : "Não"});
     formLevelRef?.current?.setFieldValue('notaReprova', {value: selectedLevelCourse.reprovapornota, label: selectedLevelCourse.reprovapornota === "S" ? "Sim" : "Não"});

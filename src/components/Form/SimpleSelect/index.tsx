@@ -18,6 +18,12 @@ export default function SimpleSelect({ name, width, options, ...rest }: Props) {
     registerField({
       name: fieldName,
       ref: selectRef.current,
+      setValue: (ref, value) => {
+        ref.select.setValue(value);
+      },
+      clearValue: ref => {
+        ref.select.select.clearValue();
+      },
       getValue: (ref: any) => {
         if (rest.isMulti) {
           if (!ref.state.value) {
