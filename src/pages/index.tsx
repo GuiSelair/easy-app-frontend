@@ -50,8 +50,8 @@ export default function Home() {
       
       api.defaults.headers.authorization = `Bearer ${authData.token}`
       
-      Cookies.set("EasyApp!Token", authData.token, auth);
-      Cookies.set("EasyApp!UserEmail", authData.user.email, auth);
+      Cookies.set("EasyApp!Token", authData.token);
+      Cookies.set("EasyApp!UserEmail", authData.user.email);
 
       push("/niveis");
 
