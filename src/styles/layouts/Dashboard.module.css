@@ -1,0 +1,13 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.container main {
+  overflow: auto;
+}

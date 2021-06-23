@@ -1,0 +1,197 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.container h3 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.header > strong {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+/* buttonContainer */
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.buttonContainer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.buttonContainer ul + ul {
+  border-left: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+}
+
+.buttonContainer ul li + li {
+  margin-left: 16px;
+}
+
+.buttonContainer ul li button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+  padding: 12px;
+  border-radius: 4px;
+
+  transition: background-color 0.2s;
+}
+
+.buttonContainer ul li button[disabled] {
+  cursor: not-allowed;
+}
+
+.buttonContainer ul li button:hover {
+  background-color: #c7c7c7;
+}
+
+.buttonContainer ul li button svg {
+  flex-shrink: 0;
+  margin-bottom: 4px;
+}
+
+/* filters */
+.filters {
+  padding: 8px 0;
+  border-top: 1px solid #eee;
+}
+
+.filters label {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+}
+
+.filters form {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.filters form > div {
+  width: 400px;
+  margin-right: 16px;
+}
+
+.filters form button {
+  margin-left: 8px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #2e656a;
+  transition: filter 0.2s;
+}
+
+.filters form button:hover {
+  filter: brightness(0.9);
+}
+
+/* levelDetails */
+.levelDetails {
+  width: 100%;
+  padding: 8px 0;
+  border-top: 1px solid #eee;
+}
+
+.levelDetails > strong {
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+}
+
+.levelDetails form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+.levelDetails form label {
+  margin: 4px 8px;
+}
+
+.levelDetails form label > div {
+  width: 140px;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.levelDetails form label input[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* tableLevels */
+.tableLevels {
+  width: 100%;
+  height: 500px;
+  overflow: auto;
+  padding: 8px 0;
+  border-top: 1px solid #eee;
+}
+
+.tableLevels > pre {
+  width: 500px;
+  overflow-y: auto;
+}
+
+.tableLevels > strong {
+  margin-bottom: 8px;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.tableLevels > button {
+  /* margin-left: 8px; */
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #2e656a;
+  color: white;
+  transition: filter 0.2s;
+
+  display: flex;
+  align-items: center;
+
+  margin: 4px 0;
+}
+
+.tableLevels > button:hover {
+  filter: brightness(0.9);
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  background: #2e656a;
+  height: 40px;
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer span {
+  color: white;
+}

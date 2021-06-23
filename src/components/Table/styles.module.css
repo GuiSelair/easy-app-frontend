@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  background: white;
+  border-radius: 10px 10px 0 0;
+  padding: 8px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.container thead {
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.container thead th {
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.container tbody {
+  color: black;
+}
+
+.container tbody td {
+  padding: 12px;
+  font-size: 14px;
+  /* text-transform: uppercase; */
+  border-bottom: 1px solid #ccc;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container tbody tr {
+  cursor: pointer;
+}
+
+.container tbody tr:hover {
+  background: #ccc;
+}
+
+.checked {
+  background: #ccc;
+}
